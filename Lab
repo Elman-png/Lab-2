@@ -1,0 +1,10 @@
+a = float(input())
+b =1.0
+while b <= 2.0: 
+if b**2 -a > 2:
+    z =3*b— a
+else:
+    z = 2*a + b
+print(round(b,1), round(z,2)
+b +=0.1
+b=round(b,1)
