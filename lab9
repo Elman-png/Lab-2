@@ -1,0 +1,9 @@
+from scipy.optimize import brentq
+from math import exp
+
+def f(x):
+    return x**2 - exp(x) - 2
+
+kok = brentq(f, -0.2, -0.1)
+
+print(kok)
