@@ -1,0 +1,23 @@
+
+n = 10  
+A = [5, -2, 9, 7, -6, 3, 12, -1, 15, 8]  
+
+
+with open('input_numbers.txt', 'w') as f:
+    for num in A:
+        f.write(f"{num}\n")
+
+with open('input_numbers.txt', 'r') as f:
+    numbers = [int(line.strip()) for line in f.readlines()]
+
+filtered_numbers = [num for num in numbers if num % 3 == 2]
+
+with open('filtered_numbers.txt', 'w') as f:
+    for num in filtered_numbers:
+        f.write(f"{num}\n")
+
+if len(filtered_numbers) > 0:
+    average = sum(filtered_numbers) / len(filtered_numbers)
+    print(f"Qalıqda 2 alınan elementlərin ədədi ortası: {average}")
+else:
+    print("Qalıqda 2 alınan heç bir element yoxdur.")
