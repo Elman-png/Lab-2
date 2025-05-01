@@ -1,0 +1,8 @@
+import random
+
+def cüt_indeks_cəmi(n):
+    massiv = [random.randint(0, 23) for _ in range(n)]
+    return sum(massiv[i] for i in range(0, n, 2))
+
+n = 10
+print(cüt_indeks_cəmi(n))
