@@ -1,0 +1,4 @@
+import random
+
+siyahi = [random.uniform(11, 21) for _ in range(10)]
+print(siyahi)
