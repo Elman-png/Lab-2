@@ -1,0 +1,14 @@
+import math
+
+x=0.2
+eps=0.01
+y=0
+n=0
+while true:
+   k=2*n+1
+   term=math.sin(k*x)/k
+   if abs(term)<eps:
+      break:
+   y+=term
+   n+=1
+print("cemin qiymeti:", y)
